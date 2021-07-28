@@ -1,9 +1,12 @@
-import './styles/App.scss';
+import "./styles/App.scss";
+import {features, articles} from "./data";
 
 function App() {
+  console.log(features);
   return (
     <div className="">
-     App
+      App
+     
     </div>
   );
 }
