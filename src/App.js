@@ -1,12 +1,17 @@
 import "./styles/App.scss";
-import {features, articles} from "./data";
+import Header from './components/Header'
+import Features from './components/Features'
+import Article from './components/Article'
+import Footer from './components/Footer'
+import { features, articles } from "./data";
 
 function App() {
-  console.log(features);
   return (
-    <div className="">
-      App
-     
+    <div className="container">
+      <Header />
+      <Features />
+      <Article />
+      <Footer/>
     </div>
   );
 }

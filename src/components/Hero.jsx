@@ -1,8 +1,8 @@
 import Button from "./Button"
-export default function Footer() {
+export default function Hero() {
 	return (
 		<div>
-			Footer
+			Hero
 			<Button/>
 		</div>
 	)

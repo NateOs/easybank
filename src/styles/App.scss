@@ -3,4 +3,8 @@
 @import "config";
 @import "include-media";
 
-
+// Globals
+body {
+	font-size: $font-normal;
+	font-family: $font-Public-Sans;
+}
