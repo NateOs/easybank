@@ -1,13 +1,13 @@
-import "../styles/App.scss"
-import Navbar from "./Navbar"
-import Button from "./Button"
-
+import "../styles/App.scss";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
+import Button from "./Button";
 
 export default function Header() {
-	return (
-		<header className="">
-			<Navbar/>
-		Header
-		</header>
-	)
+  return (
+    <header className="header">
+      <Navbar />
+      <Hero />
+    </header>
+  );
 }
