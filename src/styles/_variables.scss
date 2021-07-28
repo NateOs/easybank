@@ -1,21 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Public+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
-//bg-colors
-$primary-gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-$neutral-grayish-blue: hsl(229, 7%, 55%);
-$neutral-dark-blue: hsl(228, 56%, 26%);
-$neutral-very-dark-blue: hsl(229, 57%, 11%);
+//colors - primary
+$primary-dark-blue: hsl(233, 26%, 24%);
+$primary-lime-green: hsl(136, 65%, 51%);
+$primary-bright-cyan: hsl(192, 70%, 51%);
+
+//colors - neutral
+$neutral-grayish-blue: hsl(233, 8%, 62%);
+$neutral-light-grayish-blue: hsl(220, 16%, 96%);
+$neutral-very-light-gray: hsl(0, 0%, 98%);
+$neutral-white: hsl(0, 0%, 100%);
 
 // fonts & bg
 $transparent-white: hsla(0, 0%, 100%, 0.75);
 $light-gray: hsla(0, 0%, 100%, 0.75);
 
 $font-weights: (
-  "regular": 400,
-  "bold": 700,
+  "regular": 300,
+  "bold": 400,
+  "bolder": 500,
 );
 
-$font-normal: 14px;
-$mobile: 375px;
+// font-size
+$font-normal: 18px;
 
+// screen defs
+$mobile: 375px;
+$desktop: 1440px;
+
+// font-family
 $font-Raleway: "Raleway", sans-serif;
