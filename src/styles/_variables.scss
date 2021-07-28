@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+//bg-colors
+$primary-gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+$neutral-grayish-blue: hsl(229, 7%, 55%);
+$neutral-dark-blue: hsl(228, 56%, 26%);
+$neutral-very-dark-blue: hsl(229, 57%, 11%);
+
+// fonts & bg
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$light-gray: hsla(0, 0%, 100%, 0.75);
+
+$font-weights: (
+  "regular": 400,
+  "bold": 700,
+);
+
+$font-normal: 14px;
+$mobile: 375px;
+
+$font-Raleway: "Raleway", sans-serif;
