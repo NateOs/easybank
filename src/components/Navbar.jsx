@@ -7,25 +7,25 @@ export default function Navbar() {
   return (
     <nav className="nav">
       {/* logo */}
-      <a href="#" className="nav__logo">
+      <a href="localhost:3000/" className="nav__logo">
         <img src={logo} alt="eazybank" />
       </a>
       {/* nav links */}
       <ul className="nav__links">
         <li className="nav__link-item">
-          <a href="#">Home</a>
+          <a href="localhost:3000/">Home</a>
         </li>
         <li className="nav__link-item">
-          <a href="">About</a>
+          <a href="localhost:3000/">About</a>
         </li>
         <li className="nav__link-item">
-          <a href="">Contact</a>
+          <a href="localhost:3000/">Contact</a>
         </li>
         <li className="nav__link-item">
-          <a href="">Blog</a>
+          <a href="localhost:3000/">Blog</a>
         </li>
         <li className="nav__link-item">
-          <a href="">Careers</a>
+          <a href="localhost:3000/">Careers</a>
         </li>
         <li>
           {/* <Button /> */}
