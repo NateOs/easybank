@@ -1,7 +1,7 @@
 export default function Button() {
 	return (
-		<div>
-			Button
-		</div>
+		<button className="invite-button">
+			Request Invite
+		</button>
 	)
 }

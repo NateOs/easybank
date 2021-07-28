@@ -5,6 +5,57 @@
 
 // Globals
 body {
-	font-size: $font-normal;
-	font-family: $font-Public-Sans;
+  font-size: $font-normal;
+  font-family: $font-Public-Sans;
+  color: $neutral-grayish-blue;
+}
+
+.container {
+  width: 85%;
+  height: 100vh;
+  border: solid red 2px;
+  margin: 0 auto;
+}
+
+.invite-button {
+  width: 10.3em;
+  height: 2.9em;
+  // padding:1em;
+  border: solid $primary-lime-green 1px;
+  border-radius: 25px;
+  background: linear-gradient(to right,$primary-lime-green , $primary-bright-cyan);
+  color: $transparent-white;
+}
+
+
+// Nav
+.nav {
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  // padding: .5em 0;
+  border: solid yellow 1px;
+  &__logo {
+    margin-right: auto;
+  }
+  &__links {
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  &__menu {
+    width: 1em;
+    height: .5em;
+    margin-left: auto;
+    
+  }
+}
+
+// nav media query
+@include media("<desktop") {
+.nav__links {
+  display: none;
+}
 }
