@@ -3,19 +3,15 @@ import Header from "./components/Header";
 import Features from "./components/Features";
 import Article from "./components/Article";
 import Footer from "./components/Footer";
-import { features, articles } from "./data";
+// import { features, articles } from "./data";
 
 function App() {
   return (
     <div className="main">
       <Header />
-
-      <div className="inner-container">
-        <Features />
-        <Article />
-        <Footer />
-      </div>
-      
+      <Features />
+      <Article />
+      <Footer />
     </div>
   );
 }
