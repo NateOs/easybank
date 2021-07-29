@@ -27,17 +27,33 @@ body {
     $primary-lime-green,
     $primary-bright-cyan
   );
-  color: $transparent-white;
+  color: $neutral-white;
 }
 
+// Utility
+.line-height-def {
+  line-height: 1.7;
+}
+
+.text__title {
+  font-weight: weight(light);
+  font-size: 2.4em;
+  color: $primary-dark-blue;
+}
+
+.text__subtitle {
+  line-height: 1.7;
+  padding: 0 7.5%;
+}
+.fw-light {
+  font-weight: weight(light);
+  color: $primary-dark-blue;
+}
 /* 
 *
               Header 
 *
 */
-
-.header {
-}
 
 // Nav
 .nav {
@@ -72,11 +88,12 @@ body {
 // Hero
 .hero {
   text-align: center;
+  padding-bottom: 2.5rem;
   &__image {
     height: 45vh;
     width: 100%;
     background: url(../images/image-mockups.png) no-repeat,
-      url(../images/bg-intro-mobile.svg)  no-repeat;
+      url(../images/bg-intro-mobile.svg) no-repeat;
     background-position: right 50% bottom -7%, left center;
     background-repeat: no-repeat, repeat;
     background-size: 87%, cover;
@@ -92,5 +109,22 @@ body {
   }
   &__cta {
     margin: 2em;
+  }
+}
+
+/* 
+*
+              Features 
+*
+*/
+
+.features {
+  width: 100%;
+  padding: 2.7em 0;
+  background: $neutral-light-grayish-blue;
+  text-align: center;
+  border: solid 1px red;
+  &__subtitle {
+    margin-bottom: 2.7em;
   }
 }

@@ -11,7 +11,7 @@ import restaurant from "./images/image-restaurant.jpg";
 import plane from "./images/image-plane.jpg";
 
 // Features
-const features = [
+const feature = [
   {
     id: 1,
     iconSrc: online,
@@ -33,8 +33,8 @@ const features = [
   {
     id: 4,
     iconSrc: apilogo,
-    title: "Fast Onboarding",
-    text: "We don’t do branches. Open your account in minutes online and start taking control of your finances right away.",
+    title: "OpenAPI",
+    text: "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
   },
 ];
 
@@ -70,4 +70,4 @@ const articles = [
     text: "After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ... ",
   },
 ];
-export { features, articles };
+export { feature, articles };
