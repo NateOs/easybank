@@ -1,5 +1,4 @@
-import { feature } from "../data";
-
+import FeatureItem from "./FeatureItem";
 export default function Features() {
   return (
     <div className="features">
@@ -11,16 +10,7 @@ export default function Features() {
           hub. Control your finances like never before.
         </p>
       </div>
-      {feature.map((featureItem) => {
-        const { id, iconSrc, title, text } = featureItem;
-        return (
-          <div key={id}>
-            <img src={iconSrc} alt="" />
-            <h2 className="fw-light">{title}</h2>
-            <p className="text__subtitle">{text}</p>
-          </div>
-        );
-      })}
+      <FeatureItem />
     </div>
   );
 }
