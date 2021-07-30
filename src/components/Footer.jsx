@@ -1,4 +1,3 @@
-import logo from "../images/logo.svg";
 import fb from "../images/icon-facebook.svg";
 import youtube from "../images/icon-youtube.svg";
 import twitter from "../images/icon-twitter.svg";
