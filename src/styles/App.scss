@@ -10,6 +10,11 @@ body {
   color: $neutral-grayish-blue;
 }
 
+a, a:visited {
+  color: $transparent-white;
+  text-decoration: none;
+}
+
 .inner-container {
   width: 85%;
   height: 100vh;
@@ -175,3 +180,34 @@ body {
 *
 */
 
+.footer {
+  padding: 3em 0;
+  background: $primary-dark-blue;
+  color: $transparent-white;
+  text-align: center;
+  &__logo {
+  margin-bottom: 2em;
+  }
+  &__socials {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex ;
+    justify-content: space-around;
+    font-size: 1.8em;
+
+    list-style-type: none;
+  }
+  &__nav {
+    line-height: 2.5;
+    display: grid;
+    grid-template-columns: 1;
+  }
+  &__cta {
+    margin: 2em 0;
+  }
+  &__copyright  {
+    margin: 0;
+    color: $neutral-grayish-blue;
+  }
+}
