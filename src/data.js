@@ -45,8 +45,9 @@ const articles = [
     id: 1,
     imgSrc: currency,
     author: "By Claire Robinson",
-    title: "Online Banking",
-    text: "Receive money in any currency with no fees The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …",
+    title: "Receive money in any currency with no fees",
+    text: "The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …",
+    alt: "currency",
   },
   {
     id: 2,
@@ -54,6 +55,7 @@ const articles = [
     author: "By Wilson Hutton",
     title: "Treat yourself without worrying about money",
     text: "Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …",
+    alt: "restaurant",
   },
   {
     id: 3,
@@ -61,6 +63,7 @@ const articles = [
     author: "By Wilson Hutton",
     title: "Take your Easybank card wherever you go ",
     text: "We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …",
+    alt: "plane",
   },
   {
     id: 4,
@@ -68,6 +71,7 @@ const articles = [
     author: "By Claire Robinson",
     title: "Our invite-only Beta accounts are now live!",
     text: "After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ... ",
+    alt: "confetti",
   },
 ];
 export { feature, articles };
