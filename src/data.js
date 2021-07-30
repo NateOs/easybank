@@ -33,7 +33,7 @@ const feature = [
   {
     id: 4,
     iconSrc: apilogo,
-    title: "OpenAPI",
+    title: "Open API",
     text: "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
   },
 ];

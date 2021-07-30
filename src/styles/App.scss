@@ -10,7 +10,12 @@ body {
   color: $neutral-grayish-blue;
 }
 
-a, a:visited {
+.main {
+  min-width: 320px;
+  
+}
+a,
+a:visited {
   color: $transparent-white;
   text-decoration: none;
 }
@@ -85,6 +90,7 @@ a, a:visited {
 // nav media query
 @include media("<desktop") {
   .nav__links {
+    color: $primary-dark-blue;
     display: none;
   }
 }
@@ -127,11 +133,11 @@ a, a:visited {
   padding: 2.7em 0;
   background: $neutral-light-grayish-blue;
   text-align: center;
+  border: solid yellow 1px;
   &__subtitle {
     margin-bottom: 2.7em;
   }
 }
-
 
 /* 
 *
@@ -143,6 +149,7 @@ a, a:visited {
   @extend .features;
   background: white;
   text-align: left;
+  border: solid red 1px;
   &__title {
     text-align: center;
   }
@@ -173,7 +180,6 @@ a, a:visited {
   }
 }
 
-
 /* 
 *
               Footer 
@@ -186,13 +192,13 @@ a, a:visited {
   color: $transparent-white;
   text-align: center;
   &__logo {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
   }
   &__socials {
     width: 50%;
     margin: 0 auto;
     padding: 0;
-    display: flex ;
+    display: flex;
     justify-content: space-around;
     font-size: 1.8em;
 
@@ -206,8 +212,72 @@ a, a:visited {
   &__cta {
     margin: 2em 0;
   }
-  &__copyright  {
+  &__copyright {
     margin: 0;
     color: $neutral-grayish-blue;
   }
+}
+
+/* 
+*
+              Media Queries 
+*
+*/
+
+@media (min-width: 700px) {
+/* 
+*
+              Navbar 
+*
+*/
+
+
+
+/* 
+*
+              Hero 
+*
+*/
+.hero {
+  text-align: left;
+  padding-bottom: 2.5rem;
+  &__image {
+    height: 45vh;
+    width: 100%;
+    background: url(../images/image-mockups.png) no-repeat,
+      url(../images/bg-intro-mobile.svg) no-repeat;
+    background-position: right 50% bottom -7%, left center;
+    background-repeat: no-repeat, repeat;
+    background-size: 87%, cover;
+  }
+  &__title {
+    font-weight: weight(light);
+    font-size: 2.9em;
+    color: $primary-dark-blue;
+  }
+  &__subtitle {
+    line-height: 1.7;
+    padding: 0 7.5%;
+  }
+  &__cta {
+    margin: 2em;
+  }
+}
+
+
+
+  // Grid specs for list items
+ .grid {
+   display: grid;
+   grid-template-columns: repeat(4, minmax(auto, 20em));
+   gap: 1em;
+   justify-content: center;
+   text-align: left;
+ }
+
+ .footer {
+   display: flex;
+   justify-content: space-around;
+ }
+
 }

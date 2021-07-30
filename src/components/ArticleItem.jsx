@@ -2,7 +2,7 @@ import { articles } from "../data";
 
 export default function ArticleItem() {
   return (
-    <>
+    <section className="grid">
       {articles.map((articleItem) => {
         const { id, imgSrc, author, title, text, alt } = articleItem;
         return (
@@ -18,6 +18,6 @@ export default function ArticleItem() {
           </div>
         );
       })}
-    </>
+    </section>
   );
 }

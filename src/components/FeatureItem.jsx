@@ -2,7 +2,7 @@ import { feature } from "../data";
 
 export default function FeatureItem() {
   return (
-    <>
+    <section className="grid">
       {feature.map((featureItem) => {
         const { id, iconSrc, title, text } = featureItem;
         return (
@@ -13,6 +13,6 @@ export default function FeatureItem() {
           </div>
         );
       })}
-    </>
+    </section>
   );
 }
