@@ -1,0 +1,16 @@
+/* 
+*
+              Features 
+*
+*/
+
+.features {
+  width: 100%;
+  padding: 2.7em 0;
+  background: $neutral-light-grayish-blue;
+  text-align: center;
+  border: solid yellow 1px;
+  &__subtitle {
+    margin-bottom: 2.7em;
+  }
+}
