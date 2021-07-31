@@ -114,16 +114,16 @@ a:visited {
     }
     &__image {
       height: 70vh;
-      width: 100%;
+      width: 50%;
       background: url(../images/bg-intro-desktop.svg) no-repeat;
-      background-position: right -30vw bottom 30%;
-      background-size: cover;
+      background-position: right -23vw  bottom -7vh;
+      background-size: 150%;
     }
   }
 
   .desktop-image {
     position: relative;
-    left: 22.5vw;
+    left: 5.5vw;
     top: -12vh;
   }
 
