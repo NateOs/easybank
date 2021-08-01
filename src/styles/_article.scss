@@ -6,7 +6,7 @@
 
 .articles {
   @extend .features;
-  background: white;
+  background: $neutral-very-light-gray;
   text-align: left;
   &__title {
     text-align: center;
@@ -25,6 +25,7 @@
   }
   &__body {
     // text-align: ;
+    background: $neutral-white;
     padding: 1em;
   }
   &__text-title {

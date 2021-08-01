@@ -6,10 +6,10 @@ export default function FeatureItem() {
       {feature.map((featureItem) => {
         const { id, iconSrc, title, text } = featureItem;
         return (
-          <div key={id}>
+          <div className="feature-item" key={id}>
             <img src={iconSrc} alt="" />
             <h2 className="fw-light">{title}</h2>
-            <p className="text__subtitle">{text}</p>
+            <p className="feature__subtitle">{text}</p>
           </div>
         );
       })}

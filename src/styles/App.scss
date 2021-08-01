@@ -67,7 +67,6 @@ a:visited {
 
 .text__subtitle {
   line-height: 1.7;
-  padding: 0 7.5%;
 }
 .fw-light {
   font-weight: weight(light);
@@ -185,8 +184,31 @@ a:visited {
     top: -13.9vh;
   }
   .main {
-    overflow: auto;
+    overflow: clip;
   }
+
+  .text__title {
+    text-align: left;
+    padding-left: 7.5%;
+  }
+
+ .text__subtitle {
+   text-align: left;
+   padding-left: 7.5%;
+ }
+ .features {
+   height: 60vh;
+   padding-top: 7%;
+ }
+ .feature__subtitle {
+   text-align: left;
+ }
+
+ .feature-item {
+   width: 70%;
+   padding-left: 7.5%;
+ }
+
 
   .grid {
     display: grid;

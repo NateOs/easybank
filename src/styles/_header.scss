@@ -44,6 +44,7 @@
 .hero {
   text-align: center;
   padding-bottom: 2.5rem;
+  background: $neutral-very-light-gray;
   &__image {
     height: 45vh;
     width: 100%;
@@ -52,6 +53,10 @@
     background-position: right 50% bottom -7%, left center;
     background-repeat: no-repeat, repeat;
     background-size: 87%, cover;
+  }&__text {
+    padding-left: 7.5%;
+    padding-top: 10%;
+    padding-right: 15%;
   }
   &__title {
     font-weight: weight(light);
@@ -60,9 +65,11 @@
   }
   &__subtitle {
     line-height: 1.7;
-    padding: 0 7.5%;
+    padding: 0;
+    margin-bottom: 2em;
+
   }
   &__cta {
-    margin: 2em;
+    margin: 0;
   }
 }
