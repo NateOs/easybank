@@ -1,8 +1,10 @@
+// partials
 @import "normalize.scss";
 @import "variables";
 @import "config";
 @import "include-media";
 
+// components' partials
 @import "header.scss";
 @import "features.scss";
 @import "article.scss";
@@ -19,6 +21,10 @@ body {
   min-width: 320px;
   position: relative;
   overflow: clip;
+}
+
+.nav a {
+  color: $primary-dark-blue;
 }
 
 a,
@@ -66,42 +72,10 @@ a:visited {
   color: $primary-dark-blue;
 }
 
-/* 
-*
-              Media Queries 
-*
-*/
-@media (max-width: 1024px) {
-  //   .desktop-image {
-  //     display: none;
-  //   }
-  // }
-
-
-
-  //   /*
-  // *
-  //               Navbar
-  // *
-  // */
-  //   // Nav
-  //   .nav {
-  //     height: 4.5em;
-  //     position: relative;
-  //     z-index: 1;
-  //     background: $transparent-white;
-  //     color: $primary-dark-blue;
-  //     &__menu {
-  //       display: none;
-  //     }
-  //   }
-
-
-
-
-}
-
 // Media Queries
+
+// less than tablet
+
 
 // above or equal to tablet mode
 @include media("<tablet") {
@@ -109,18 +83,29 @@ a:visited {
   .desktop-image {
     display: none;
   }
+
+
 }
 
 // grey area b/n tablet and phone
 @include media(">=tablet", "<=desktop") {
-
   .nav {
     height: 4.5em;
     position: relative;
     z-index: 1;
-    background: $transparent-white;
+    background: white;
     color: $primary-dark-blue;
+    display: flex;
+    justify-content: space-between;
     &__menu {
+      display: none;
+    }
+    &__links {
+      display: flex;
+      align-content: center;
+      justify-content: space-around;
+      color: $primary-dark-blue;
+    }&__button {
       display: block;
     }
   }
@@ -145,21 +130,35 @@ a:visited {
     left: 5.5vw;
     top: -12vh;
   }
-  
-}
-// greater than or desktop
-@include media(">=desktop") {
 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 20em));
+    gap: 1em;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+// desktop and above
+@include media(">=desktop") {
   .nav {
-        height: 4.5em;
-        position: relative;
-        z-index: 1;
-        background: $transparent-white;
-        color: $primary-dark-blue;
-        &__menu {
-          display: none;
-        }
-      }
+    height: 4.5em;
+    position: relative;
+    z-index: 1;
+    background: white;
+    color: $primary-dark-blue;
+    &__menu {
+      display: none;
+    }&__button {
+      display: block;
+    }
+    
+  }
 
   .hero {
     display: flex;
@@ -187,22 +186,18 @@ a:visited {
   }
 
   .grid {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(auto, 20em));
-        gap: 1em;
-        justify-content: center;
-        text-align: left;
-      }
-  
-      .footer {
-        display: flex;
-        justify-content: space-around;
-      }
-    
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 20em));
+    gap: 1em;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
 }
-
-
-
 
 // // greater than or desktop
 // @include media(">=HD") {
