@@ -73,11 +73,11 @@ a:visited {
   color: $primary-dark-blue;
 }
 
-// 
-// 
+//
+//
 // Media Queries
-// 
-// 
+//
+//
 
 // less than tablet
 
@@ -86,6 +86,25 @@ a:visited {
   // remove desktop image on tablets and mobile
   .desktop-image {
     display: none;
+  }
+  .nav__links {
+    background: white;
+    width: 90vw;
+    height: 35vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-top: 2em;
+    position: absolute;
+    top: 3.8em;
+
+    text-align: center;
+    font-size: 1.4em;
+
+    transition: ease-in 1s;
+  }
+
+  .nav__links-active {
+    display: block;
   }
 }
 
@@ -227,21 +246,21 @@ a:visited {
 //
 //
 
-//Button 
+//Button
 .invite-button:hover {
   background: linear-gradient(to right, hsl(155, 58%, 53%), hsl(195, 94%, 74%));
 }
 
 // Links
- a:hover {
+a:hover {
   color: hsl(155, 58%, 53%);
 }
 
 // Media icons
-.footer__socials  img:hover{
-border: solid 2px hsl(155, 58%, 53%);
-border-radius: 5px;
-transition: ease-in 1s;
+.footer__socials img:hover {
+  border: solid 2px hsl(155, 58%, 53%);
+  border-radius: 5px;
+  transition: ease-in 1s;
 }
 
 // NavLink Items

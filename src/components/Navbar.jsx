@@ -5,14 +5,11 @@ import logo from "../images/logo.svg";
 import Button from "./Button";
 
 export default function Navbar() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const toggleNav = () => {
     if (open === false) setOpen(true);
-    console.log(open);
     if (open === true) setOpen(false);
-    console.log(open);
-
   };
   return (
     <nav className="nav">
@@ -22,7 +19,7 @@ export default function Navbar() {
       </a>
 
       {/* nav links */}
-      <div className="nav__links">
+      <div className={open === true ? "nav__links nav__links-active" : "nav__links"}>
         <p className="nav__link-item">
           <a href="localhost:3000/">Home</a>
         </p>
@@ -46,7 +43,12 @@ export default function Navbar() {
       </div>
 
       {/* menu icon */}
-      <img src={hamburger} alt="menu" className="nav__menu" onClick={() => toggleNav()} />
+      <img
+        src={hamburger}
+        alt="menu"
+        className="nav__menu"
+        onClick={() => toggleNav()}
+      />
     </nav>
   );
 }
