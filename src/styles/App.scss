@@ -73,7 +73,11 @@ a:visited {
   color: $primary-dark-blue;
 }
 
+// 
+// 
 // Media Queries
+// 
+// 
 
 // less than tablet
 
@@ -208,7 +212,7 @@ a:visited {
       margin-left: 4.5em;
     }
     &__socials > li {
-      margin-right: .5em;
+      margin-right: 0.5em;
     }
   }
 }
@@ -216,3 +220,33 @@ a:visited {
 // // greater than or desktop
 // @include media(">=HD") {
 // }
+
+//
+//
+//     Active States
+//
+//
+
+//Button 
+.invite-button:hover {
+  background: linear-gradient(to right, hsl(155, 58%, 53%), hsl(195, 94%, 74%));
+}
+
+// Links
+ a:hover {
+  color: hsl(155, 58%, 53%);
+}
+
+// Media icons
+.footer__socials  img:hover{
+border: solid 2px hsl(155, 58%, 53%);
+border-radius: 5px;
+transition: ease-in 1s;
+}
+
+// NavLink Items
+.nav__links {
+  // display: block;
+  // height: 100%;
+  // border: solid green 2px;
+}
