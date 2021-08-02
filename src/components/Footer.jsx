@@ -60,6 +60,7 @@ export default function Footer() {
           </li>
         </ul>
       </div>
+      
       {/* nav links */}
       <div className="footer__nav">
         <a href="aboutus">About Us</a>

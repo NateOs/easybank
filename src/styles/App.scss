@@ -138,8 +138,6 @@ a:visited {
     text-align: left;
     padding: 0 1em;
   }
-
-  
 }
 
 // desktop and above
@@ -193,8 +191,6 @@ a:visited {
     padding-left: 7.5%;
   }
 
-
-
   .grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(auto, 20em));
@@ -207,6 +203,13 @@ a:visited {
   .footer {
     display: flex;
     justify-content: space-around;
+    text-align: left;
+    &__cta:first-child {
+      margin-left: 4.5em;
+    }
+    &__socials > li {
+      margin-right: .5em;
+    }
   }
 }
 
